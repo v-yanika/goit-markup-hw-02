@@ -1,39 +1,80 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #212121;
-    background-color: #FFFFFF;
+:root {
+    --text-color: #757575;
+    --title-color: #212121;
+    --background-color: #2F303A;
+    --accent-color: #2196F3;
+    --accent-text-color: #FFFFFF;
 }
 
-h2 {
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--title-color);
+    background-color: var(--accent-text-color);
+}
+
+/* Заголовки */
+.work-title,
+.team-title {
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
+    font-style: normal;
+    font-weight: 700;
 }
 
-h3 {
+.future-title {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
-p {
+/* Абзац */
+.future-text {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--text-color);
+    font-style: normal;
+    font-weight: 400;
 }
 
-h1 {
+.team-text {
+    color: var(--text-color);
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+/* Герой */
+.order-title {
     font-size: 44px;
     line-height: 1.37;
     letter-spacing: 0.06em;
     text-align: center;
-    color: #FFFFFF;
-
+    color: var(--accent-text-color);
+    text-transform: uppercase;
 
 }
 
+.order {
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.order-button {
+    border-radius: 4px;
+    color: var(--accent-text-color);
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.96px;
+    background-color: var(--accent-color);
+}
+
+/* Логотип */
 .logo {
     font-family: Raleway;
     font-size: 26px;
@@ -41,32 +82,22 @@ h1 {
     text-decoration: none;
     color: #000;
 }
+
+.logo-footer {
+    font-family: Raleway;
+    font-size: 26px;
+    letter-spacing: 0.78px;
+    text-decoration: none;
+    color: var(--accent-text-color);
+}
+
 .logo-item {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
-.order {
-    background-color: #2F303A;
-    text-align: center;
-}
-
-button {
-    border-radius: 4px;
-    color: #FFF;
-    text-align: center;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.96px;
-    background-color: #2F303A
-}
-
-button:hover,
-button:focus {
-    background-color: #2196F3;
-}
-
+/* Ссылки */
 .link {
-    color: #212121;
+    color: var(--title-color);
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
@@ -74,8 +105,9 @@ button:focus {
     text-decoration: none;
 
 }
+
 .address-link {
-    color: #757575;
+    color: var(--text-color);
     font-size: 14px;
     line-height: normal;
     letter-spacing: 0.28px;
@@ -83,24 +115,28 @@ button:focus {
 
 .link:hover,
 .link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
-ul {
+.list {
     list-style: none;
 }
 
-footer {
-    background-color: #2F303A;
+/* Футер */
+.footer {
+    background-color: var(--background-color);
 
 }
 
-address>p {
-    color: #FFF;
+.address-text {
+    color: var(--accent-text-color);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.42px;
     font-style: normal;
+    width: 231px;
+    height: 21px;
+    flex-shrink: 0;
 }
 
 .address-item {
@@ -109,4 +145,64 @@ address>p {
     line-height: 1.71;
     letter-spacing: 0.42px;
     font-style: normal;
+    width: 231px;
+    height: 21px;
+    flex-shrink: 0;
+}
+
+/* Портфоліо */
+.active {
+    color: var(--accent-color);
+}
+
+.button-main {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.63;
+    letter-spacing: 0.48px;
+    color: var(--title-color);
+    border-radius: 4px;
+    background: #F5F4FA;
+    font-style: normal;
+}
+
+.button-main:hover,
+.button-main:focus {
+    background-color: var(--accent-color);
+    color: var(--accent-text-color);
+}
+.current {
+    background-color: var(--accent-color);
+    color: var(--accent-text-color);
+}
+
+.container {
+    border: 1px solid #EEE;
+    background-color: var(--accent-text-color);
+    width: 370px;
+    height: 404px;
+    flex-shrink: 0;
+}
+
+.container-title {
+    color: var(--title-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.08px;
+    text-decoration: none;
+}
+
+.container-link {
+    text-decoration: none;
+}
+
+.container-sub {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.88;
+    letter-spacing: 0.48px;
+    color: var(--text-color);
 }
