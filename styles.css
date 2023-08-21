@@ -21,6 +21,7 @@ body {
     text-align: center;
     font-style: normal;
     font-weight: 700;
+    color: var(--title-color);
 }
 
 .future-title {
@@ -215,4 +216,8 @@ body {
     line-height: 1.88;
     letter-spacing: 0.48px;
     color: var(--text-color);
+}
+
+.section-team {
+    color: #F5F4FA;
 }
