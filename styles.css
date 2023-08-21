@@ -30,6 +30,15 @@ body {
     text-transform: uppercase;
 }
 
+.team-item {
+    color: var(--title-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
 /* Абзац */
 .future-text {
     font-size: 14px;
@@ -99,18 +108,21 @@ body {
 .link {
     color: var(--title-color);
     font-size: 14px;
+    font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
     text-decoration: none;
-
 }
 
 .address-link {
     color: var(--text-color);
     font-size: 14px;
+    font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    text-decoration: none;
+
 }
 
 .link:hover,
@@ -134,9 +146,6 @@ body {
     line-height: 1.71;
     letter-spacing: 0.42px;
     font-style: normal;
-    width: 231px;
-    height: 21px;
-    flex-shrink: 0;
 }
 
 .address-item {
@@ -145,9 +154,9 @@ body {
     line-height: 1.71;
     letter-spacing: 0.42px;
     font-style: normal;
-    width: 231px;
-    height: 21px;
-    flex-shrink: 0;
+    font-weight: 400;
+    text-decoration: none;
+
 }
 
 /* Портфоліо */
@@ -171,6 +180,7 @@ body {
     background-color: var(--accent-color);
     color: var(--accent-text-color);
 }
+
 .current {
     background-color: var(--accent-color);
     color: var(--accent-text-color);
